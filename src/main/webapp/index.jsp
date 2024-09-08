@@ -23,7 +23,7 @@
 
          Connection con = null;
 
-        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/students", "root", "ayush@1234");
+        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/students", "root", "password");
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery(query);
         while(rs.next()) {
